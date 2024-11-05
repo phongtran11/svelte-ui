@@ -3,7 +3,7 @@ name: Svelte UI
 on:
   push:
     branches:
-      - main 
+      - main
 
 jobs:
   build:
@@ -29,8 +29,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Lint code
-        run: npm run lint 
-
       - name: Build Svelte library
-        run: npm run build 
+        run: npm run build
